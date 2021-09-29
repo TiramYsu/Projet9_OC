@@ -7,7 +7,7 @@ import pandas as pd
 import numpy as np
 import json
 from numpyencoder import NumpyEncoder
-5
+
 pkl_filename = './Prediction/pickle_surprise_model_KNNWithMeans.pkl'
 
 # Load from file

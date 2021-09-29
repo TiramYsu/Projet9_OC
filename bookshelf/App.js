@@ -24,7 +24,7 @@ class App extends Component {
 
   goToStep1 = async () => {
     const { data: recommendations } = await axios.post(config.API_URL, {
-      userId: this.state.selectedUser
+      'userId' : String(this.state.selectedUser)
     });
     // const recommendations = [34, 32, 893, 1];
     this.setState({ step: 1, recommendations });
